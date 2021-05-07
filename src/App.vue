@@ -2,21 +2,12 @@
   <div id="app">
     <div id="backg"></div>
     <center>
-      <el-table :data="tableData" style="width: 80%;top:200px">
-        <el-table-column
-          prop="date"
-          label="日期"
-          width="180">
-        </el-table-column>
-        <el-table-column
-          prop="name"
-          label="姓名"
-          width="180">
-        </el-table-column>
-        <el-table-column
-          prop="address"
-          label="地址">
-        </el-table-column>
+      <el-table :data="tableData" style="width: 80%;top:200px;font-size:27px;" size="medium" fit="true" border="true">
+        <el-table-column prop="date" label="#" width="40" style="height:50px"></el-table-column>
+        <el-table-column prop="name" label="选手姓名" width="180"></el-table-column>
+        <el-table-column prop="point1" label="第一轮得分"> </el-table-column>
+        <el-table-column prop="point2" label="第二轮观众投票得分"> </el-table-column>
+        <el-table-column prop="point3" label="第二轮评委投票得分"> </el-table-column>
       </el-table>
     </center>
     
@@ -31,21 +22,41 @@ export default {
   data() {
     return {
       tableData: [{
-        date: '2016-05-02',
+        date: '1',
         name: '王小虎',
-        address: '上海市普陀区金沙江路 1518 弄'
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
       }, {
-        date: '2016-05-04',
+        date: '2',
         name: '王小虎',
-        address: '上海市普陀区金沙江路 1517 弄'
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
       }, {
-        date: '2016-05-01',
+        date: '3',
         name: '王小虎',
-        address: '上海市普陀区金沙江路 1519 弄'
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
       }, {
-        date: '2016-05-03',
+        date: '4',
         name: '王小虎',
-        address: '上海市普陀区金沙江路 1516 弄'
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
+      }, {
+        date: '5',
+        name: '王小虎',
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
+      }, {
+        date: '6',
+        name: '王小虎',
+        point1: '20.4',
+        point2: '21.4',
+        point3: '22.4'
       }]
     }
   },
@@ -77,5 +88,11 @@ export default {
 }
 .body{
   margin:0;
+}
+.el-table__row{
+  height: 70px;
+}
+.has-gutter{
+  height: 70px;
 }
 </style>
