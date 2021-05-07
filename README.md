@@ -1,24 +1,6 @@
 # songvote
 
-## Project setup
+## What's this?
 ```
-yarn install
+This is a vue interactive front end for 2021 haue singing competitions. This project is only used to save the code, so it should be of no other use.
 ```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
